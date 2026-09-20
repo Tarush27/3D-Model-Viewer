@@ -9,6 +9,21 @@ android { namespace = "com.example.threedviewer"; compileSdk = 35
     defaultConfig { applicationId = "com.example.threedviewer"; minSdk = 24; targetSdk = 35; versionCode = 1; versionName = "1.0" }
     buildFeatures { compose = true }
     packaging { resources { excludes += "/META-INF/{AL2.0,LGPL2.1}" } }
+    signingConfigs {
+        create("release") {
+            storeFile = file("../release-key.keystore")
+            storePassword = "password123"
+            keyAlias = "release-key-alias"
+            keyPassword = "password123"
+        }
+    }
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_21
         targetCompatibility = JavaVersion.VERSION_21
