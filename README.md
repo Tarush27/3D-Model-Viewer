@@ -4,6 +4,17 @@ A modern, highly interactive Android application built using Jetpack Compose tha
 
 ---
 
+## Video
+
+[Screencast From 2026-09-20 12-34-00.webm](https://github.com/user-attachments/assets/626e4d39-cfa7-4ab3-b502-12e1d28e5148)
+
+
+
+https://github.com/user-attachments/assets/43f745dc-6981-449d-9044-0d95b4debd74
+
+
+
+
 ## 🚀 3D Graphics Foundation
 
 ### Library Used: **Sceneview (v2.3.0)**
@@ -47,3 +58,10 @@ Managing multiple live 3D rendering viewports simultaneously on a mobile platfor
 
 * **Filament Surface Layering Constraints:** The project applies `setZOrderMediaOverlay(true)` to embed surface rendering layouts inline. On certain legacy GPU architectures or older Android versions, this can occasionally lead to edge clipping or background artifact glitches when regular Jetpack Compose components completely overlap the 3D scene.
 * **Static Skeletal Animations:** Although the imported `.glb` assets may contain complex embedded skeleton bone animations, the application currently focuses entirely on layout manipulations (translations, manually controlled rotations, and scale) and doesn't trigger skeletal mesh timelines.
+
+---
+
+## Devices Tested
+
+OnePlus 10T
+Redmi Note 5 Pro
