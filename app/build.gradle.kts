@@ -10,8 +10,8 @@ android { namespace = "com.example.threedviewer"; compileSdk = 35
     buildFeatures { compose = true }
     packaging { resources { excludes += "/META-INF/{AL2.0,LGPL2.1}" } }
     compileOptions {
-        sourceCompatibility = org.gradle.api.JavaVersion.VERSION_21
-        targetCompatibility = org.gradle.api.JavaVersion.VERSION_21
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 }
 
