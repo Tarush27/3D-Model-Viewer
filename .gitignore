@@ -3,6 +3,8 @@
 /local.properties
 /.idea/workspace.xml
 .idea/vcs.xml
+.idea/planningMode.xml
+.idea/markdown.xml
 /.idea/repositories.xml
 /.idea/caches
 /.idea/modules.xml
